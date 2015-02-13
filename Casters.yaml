@@ -1,0 +1,30 @@
+---
+- :name: Thomas
+  :adept: true
+  :magery: 5
+  :thaumatology: 19
+  :alchemy: 0
+  :paths:
+    :spirit: 17
+    :undead: 15
+  :kits: {}
+  :mastery: {}
+- :name: Sabrina
+  :adept: false
+  :magery: 0
+  :thaumatology: 21
+  :alchemy: 0
+  :paths: {}
+  :kits: {}
+  :mastery: {}
+- :name: Annie
+  :adept: true
+  :magery: 2
+  :thaumatology: 12
+  :alchemy: 16
+  :paths:
+    :body: 12
+    :magic: 11
+  :kits:
+    :alchemy: :fine
+  :mastery: {}

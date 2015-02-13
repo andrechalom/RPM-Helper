@@ -1,0 +1,8 @@
+RPM-Helper
+
+A helper tool for the Ritual Path Magic extension to the GURPS RPG system. 
+Please see the LEGAL_INFORMATION file for, well, legal information.
+
+This tools allows you to create and save your rituals for future use, speeding up the dice rolling for long rituals. To use it under Linux, open "RPM-cli.rb" on a terminal. To use it under Windows, you can double click the "RPM-cli.exe", but it is recommended that you run it under a terminal as well.
+
+The RPM-cli will present you with a menu in which it's possible to create a profile for your Caster and your Rituals. The saved casters and rituals cannot be edited from the program at the moment, but you can open and edit the Casters.yaml and Rituals.yaml files - they should be somewhat self-explanatory.

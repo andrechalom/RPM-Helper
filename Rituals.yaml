@@ -1,0 +1,164 @@
+---
+- :name: Barkskin
+  :effects:
+  - :level: :lesser
+    :effect: :strengthen
+    :path: :body
+  :modifiers:
+  - :modifier: :altered_trait
+    :level: 9
+    :description: +3DR Tough Skin
+  :description: Transforms your skin to bark
+- :name: Stoneskin
+  :effects:
+  - :level: :greater
+    :effect: :strengthen
+    :path: :body
+  :modifiers:
+  - :modifier: :altered_trait
+    :level: 15
+    :description: +5DR Tough Skin
+  :description: Transforms your skin to stone
+- :name: Protect
+  :effects:
+  - :level: :lesser
+    :effect: :strengthen
+    :path: :mind
+  - :level: :lesser
+    :effect: :strengthen
+    :path: :body
+  :modifiers:
+  - :modifier: :altered_trait
+    :level: 5 # the number of character points added/subtracted
+    :description: +1 Will
+  - :modifier: :altered_trait
+    :level: 6
+    :description: +2DR Tough Skin
+  :description: Increases physical and mental resistance for one subject
+- :name: Hinder
+  :effects:
+  - :level: :greater
+    :effect: :destroy
+    :path: :body
+  :modifiers:
+  - :modifier: :bestow
+    :class: :moderate
+    :level: -2
+    :description: dodge rolls
+  :description: Makes an enemy easier to hit
+- :name: Buff (mind)
+  :effects:
+  - :level: :lesser
+    :effect: :strengthen
+    :path: :mind
+  :modifiers:
+  - :modifier: :bestow
+    :class: :narrow
+    :level: 2
+    :description: Single skill
+  :description: Gives a bonus to one skill
+- :name: Buff (body)
+  :effects:
+  - :level: :lesser
+    :effect: :strengthen
+    :path: :body
+  :modifiers:
+  - :modifier: :bestow
+    :class: :narrow
+    :level: 2
+    :description: Single skill
+  :description: Gives a bonus to one skill
+- :name: Haste
+  :effects:
+  - :level: :lesser
+    :effect: :strengthen
+    :path: :body
+  :modifiers:
+  - :modifier: :altered_trait
+    :level: 20
+    :description: +1 Basic Speed
+  :description: Gives lightning reflexes
+- :name: Acid Bullet
+  :effects:
+  - :level: :lesser
+    :effect: :destroy
+    :path: :body
+  :modifiers:
+  - :modifier: :damage
+    :level: 1d # BASE damage (will be multiplied by class and type)
+    :class: :external
+    :type: cor
+  :description: An acid that causes small burning on a single target. Usually cast as a charm
+- :name: Toxic Bullet
+  :effects:
+  - :level: :lesser
+    :effect: :destroy
+    :path: :body
+  :modifiers:
+  - :modifier: :damage
+    :level: 2d+2
+    :class: :internal
+    :type: tox
+  :description: A powerful toxin that hurts a single target. Usually cast as a charm
+- :name: Nausea
+  :effects: 
+  - :level: :lesser
+    :effect: :destroy
+    :path: :body
+  :modifiers:
+  - :modifier: :affliction
+    :level: 30
+    :description: Nausea
+  - :modifier: :aoe
+    :level: 1 # meters
+    :exclude: 2
+  :description: Causes unease and disconfort with an involuntary urge to vomit.  
+- :name: Blur vision
+  :effects: 
+  - :level: :lesser
+    :effect: :destroy
+    :path: :body
+  :modifiers:
+  - :modifier: :altered_trait
+    :level: -25
+    :description: Nearsighted
+  :description: Causes one target to suddenly become nearsighted (-2 to melee, -6 to vision rolls, double distance to ranged att)
+- :name: Minor delusion
+  :effects: 
+  - :level: :lesser
+    :effect: :destroy
+    :path: :mind
+  :modifiers:
+  - :modifier: :altered_trait
+    :level: -5
+    :description: Minor delusion
+  :description: These are not the droids you're looking for
+- :name: Harm
+  :effects: 
+  - :level: :lesser
+    :effect: :destroy
+    :path: :body
+  :modifiers:
+  - :modifier: :damage
+    :level: 2d # BASE damage (will be multiplied by class and type)
+    :class: :internal
+    :type: tox
+  :description: Must touch subject. Corrodes the target's life force
+- :name: Cure disease
+  :effects: 
+  - :level: :lesser
+    :effect: :sense
+    :path: :body
+  - :level: :lesser
+    :effect: :restore
+    :path: :body
+  :description: Diagnose and cure a simple disease.
+- :name: Summon
+  :effects: 
+  - :level: :greater
+    :effect: :control
+    :path: :body
+  - :level: :lesser
+    :effect: :sense
+    :path: :body
+  :description: Calls a living being. It will probably be angry (must include duration, range and weight!)
